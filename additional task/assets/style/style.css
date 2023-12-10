@@ -1,0 +1,116 @@
+
+@font-face {
+    font-family: "NEXT ART";
+    src: url(../fonts/NEXTART_Bold.woff2) format("woff2"), url(../fonts/NEXTART_Bold.woff) format("woff");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Nunito Sans";
+    src: url(../fonts/NunitoSans_Regular.woff2) format("woff2"), url(../fonts/NunitoSans_Regular.woff) format("woff");
+    font-weight: 400;
+}
+
+* {
+    font-family: "Nunito Sans", Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+.title {
+    font-family: "NEXT ART", Arial, sans-serif;
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 5px 5px rgba(16, 28, 190, 0.183);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    padding: 0 25px;
+}
+
+.directors{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    min-width: 40%;
+    background-color: rgba(16, 28, 190, 0.072);
+    border-radius: 10px;
+}
+
+.directors__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 50px;
+    padding: 10px;
+}
+
+.directors__item:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.344);
+    background-color: rgba(16, 28, 190, 0.183);
+}
+
+.directors__item-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.directors__item-description {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 0;
+    padding: 12px;
+    height: auto;
+    width: auto;
+    min-width: 100%;
+    box-shadow: 0 0 15px 0 rgba(24,18,30,.12);
+    background: #fdfdfd;
+    gap: 10px;
+    
+}
+
+.directors__item-name {
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin: 5px;
+    padding: 0;
+}
+
+.directors__item-link {
+    display: block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+.container__footer {
+margin: 10px;
+padding: 20px;
+font-family: "NEXT ART", Arial, sans-serif;
+font-size: 20px;
+letter-spacing: 1px;
+text-align: center;
+}
+.container__footer:hover {
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(24, 18, 30, 0.344);
+    background-color: rgba(16, 28, 190, 0.183);
+}
+
+@media screen and (max-width: 700px) {
+    .directors__item {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+}
+}
