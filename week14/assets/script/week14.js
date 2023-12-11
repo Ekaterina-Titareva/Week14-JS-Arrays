@@ -19,7 +19,7 @@ console.log(countries);
 //Задание 5
 //У вас есть массив countries, содержащий названия нескольких стран. Используя метод массива, выведите в консоль последний элемент массива. Для этого можно использовать свойство length и индексацию элементов.
 //Обратите внимание, в JavaScript индексация элементов в массиве начинается с 0.
-console.log(countries[7]);
+console.log(countries[countries.length - 1]);
 //Задание 6
 //У вас есть массив countries, содержащий названия нескольких стран. Используя метод массива shift, извлеките первый элемент массива и выведите его в консоль. Обратите внимание, что сам массив должен сохраниться в переменной.
 console.log(countries.shift());
@@ -47,8 +47,8 @@ console.log(russianCities);
 function sum (a, b) {
     return a + b; //Вызываем функцию, переданную в качестве параметра
 }
-console.log(sum(numbers.length, numbers[0]));
-//console.log(numbers.length + numbers[0]); если функцию не создавать, то еще проще
+console.log(sum(numbers[numbers.length - 1], numbers[0]))
+//console.log(numbers[numbers.length-1] + numbers[0]);
 //Задание 11
 //У вас есть массив numbers, содержащий числа от 1 до 10. Напишите функцию filterEvenNumbers, которая принимает этот массив в качестве аргумента и выводт в консоль новый массив, содержащий только чётные числа из исходного массива, с использованием метода filter().
 function filterEvenNumbers(numbers) {
